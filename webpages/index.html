@@ -8,35 +8,52 @@
         <title>Home Page</title>
         <link rel="stylesheet" href="./style/design.css">
         <link rel="stylesheet" href="./style/normalize.css">
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
     </head>
+    
     <body>
-        <div class="content">
-            <div class="navPanel">
-                <section>
-                    <header class="LogoAndTitle">
-                        <a href="./homepage.html" target="_blank">
-                            <img src="./images/Common Images/Logo/Logo.png" width="200px">
-                        </a>
-                        <h1 class="ZooName">Dehiwala Zoo & Botanical Reserve.</h1>
-                    </header>
-                </section>
+        <div>
+            <header class="main-header">
+                <a href="./index.html" target="_blank">
+                    <img src="./images/common/Logo/Logo.png" width="200px">
+                </a>
+                <h1 >Dehiwala Zoo & Botanical Reserve.</h1>
+            </header>
 
-                <!--Navigation Bar-->
-                <nav class="mainNav">
-                    <a href= "homepage.html" class="current">HOME</a>&emsp;
-                    <a href= "animalsandplants.html">ANIMALS & PLANTS</a>&emsp;
-                    <a href= "activities.html">ACTIVITIES</a>&emsp;
-                    <a href= "shop&donate.html">SHOP + DONATIONS</a>&emsp;
-                    <a href= "contactus.html">CONTACT US!</a>&emsp;
-                    <a href="#"> <img src="images/Common Images/search.jpg" width="50px" alt=""></a>
+            <!--Navigation Bar-->
+                    <input type="checkbox" id="menu-bar">
+                    <label for="menu-bar" id="menu-text"><h3>MENU</h3> </label>
+
+                <nav class="navbar">
+                    <ul>
+                        <div class="search-box">
+                            <!---->
+                            <input type="text" class="search-txt" placeholder="Search">
+                            <!--<input type="button" class="search-btn"value="Search">-->
+                        </div>
+                        <li><a href= "index.html" class="current">HOME</a></li>
+                        <li><a href= "animalsandplants.html">ANIMALS & PLANTS</a></li>
+                        <li><a href= "activities.html">ACTIVITIES</a></li>
+                        <li><a href= "shop&donate.html">SHOP & DONATIONS</a></li>
+                        <li><a href= "contactus.html">CONTACT US!</a></li>
+
+                    </ul>
                 </nav>
-            </div>
 
-            <div class="main">
-                <!--header image and heading-->
-                <header class="mainHeader">
-                    <h1>LIVE TO YOU FROM THE WILD!!!</h1>
-                    <img src= "IMAGES/Webpage Content/Homepage/anim6.jpg">
+          
+
+            <div>
+                <!--Main image and content of page-->
+                <section class="sec1-index">
+                    <div class="container">
+                        <h1 class="txt">WELCOME TO THE WILD SIDE</h1>
+                        <img src= "IMAGES/webpage/Homepage/anim6.jpg">
+                    </div>
+
+                    <h1 class="mobile-txt">WELCOME TO THE WILD SIDE</h1>
                     <p>The Dehiwala National Zoo is one of Asia's oldest zoos,
                         with a magnificent array of exotic and indigenous animals.
 
@@ -50,50 +67,66 @@
                         Zoo supports and promotes conservation by reproducing rare and endangered species,
                     while giving them the care and support they need</p>
                     <!--http://nationalzoo.gov.lk/ 2020-->
-                </header>
+                </section>
                 
-                <!--SECTION 1 - Live Feed Info1 -->
-                <section class="liveFeed">
+                <!--SECTION 2 - Live Feed Info1 -->
+                <section class="sec2-index">
                     <h1>WATCH OUR LIVE FEED FROM THE COMFORT OF YOUR HOME</h1>
-                    <h3>Manta Cam</h3>
-                    <img src="IMAGES/Webpage Content/Animal Activities/Manta/Manta1.jpg" width="200">
-                    <p> Raised since they were pups, Samoa,Lani and Kri, our Manta Rays, have been having the time of their life in our newly refurbished
-                        aquarium, check in the Live Feed Cameras at 9AM to 3PM Saturdays to check in with Samoa and her little pup Kri!
-                        <a href="animal1.html">Click Here to Go directly to the Live Feed</a>
-                    </p>
-                    <h3>Turtle Cam</h3>
-                    <img src="IMAGES/Webpage Content/Animal Activities/Turtles/Turt1.jpg" width="200">
-                    <p> Rescued last year, in the shores of Galle, Titi, our year old, Loggerhead Turtle, has just been moved 
-                        into the larger tank,
-                        Watch her progress as our Zookeepers train her to socialize with the rest of her species,
-                        Join us at 2PM to 3PM every Fridays, to see Titi's progress.
-                        <a href="animal2.html">Click Here to Go directly to the Live Feed</a>
+                    <div class="sec2-content">
+
+                        <div class="sec2-grid">
+                            <h3>Manta Cam</h3>
+                            <img src="IMAGES/webpage/activities/Manta/Manta1.jpg" width="200">
+                            <p> Raised since they were pups, Samoa,Lani and Kri, our Manta Rays, have been having the time of their life in our newly refurbished
+                                aquarium, check in the Live Feed Cameras at 9AM to 3PM Saturdays to check in with Samoa and her little pup Kri!
+                                <br>
+                                <a href="animal1.html">Click Here to Go directly to the Live Feed</a>
+                            </p>
+                        </div>
+
+                        <div class="sec2-grid">
+                            <h3>Turtle Cam</h3>
+                            <img src="IMAGES/webpage/activities/Turtles/Turt1.jpg" width="200">
+                            <p> Rescued last year, in the shores of Galle, Titi, our year old, Loggerhead Turtle, has just been moved 
+                                into the larger tank,
+                                Watch her progress as our Zookeepers train her to socialize with the rest of her species,
+                                Join us at 2PM to 3PM every Fridays, to see Titi's progress.
+                                <br>
+                                <a href="animal2.html">Click Here to Go directly to the Live Feed</a>
+                        </div>
+
+                    </div>
+
                 </section>
 
 
-                <!--SECTION 2 - below is the news section  -->
-                <section class="News">
+                <!--SECTION 3 - below is the news section  -->
+                <section class="sec3-index">
                     <h1>NEWS</h1>
                     <h2>relocated injured elephants now back in the reserve</h2>
-                    <img src="IMAGES/Webpage Content/Homepage/anim4.jpg" width="300">
-                    <p>
-                       On the 14th of December 2021, 5 elephants were found shot by poachers close to the Pinnawala
-                       Elephant Reserve, Our Rescue Team was called onsite to tend to these Giants, whilst our transportation
-                       department were getting ready to move them to our Vet unit.
-                       All 5 of the elephants were in a critical condition and were clutching to their dear lives.
-                    </p>
-                    <br>
-                    <p>
-                       Today, these giants are doing well, thanks to our medical team.
-                       The elephants are moved into our reserve, which will be open to the public 
-                       hopefully after the curfew is lifted.
-                    </p> 
+                    <img src="IMAGES/webpage/Homepage/anim4.jpg" width="300">
+                    <div class="sec3-text">
+                        
+                        <p>
+                            On the 14th of December 2021, 5 elephants were found shot by poachers close to the Pinnawala
+                            Elephant Reserve, Our Rescue Team was called onsite to tend to these Giants, whilst our transportation
+                            department were getting ready to move them to our Vet unit.
+                            All 5 of the elephants were in a critical condition and were clutching to their dear lives.
+                         </p>
+                         <br>
+                         <p>
+                            Today, these giants are doing well, thanks to our medical team.
+                            The elephants are moved into our reserve, which will be open to the public 
+                            hopefully after the curfew is lifted.
+                         </p> 
+                    </div>
+
                 </section>
 
-                <!--SECTION 3 - below is the section regarding zoo closing de to pandemic-->
-                <section class="ZooClosing">
+                <!--SECTION 4 - below is the section regarding zoo closing de to pandemic-->
+                <section class="sec4-index">
                     <h2>Zoo Closed until Further Notice</h2>
-                    <img src="IMAGES/Webpage Content/Homepage/zooBuilding.jpg">
+                    <img src="IMAGES/webpage/Homepage/zooBuilding.jpg">
                     <p>
                         Due to the curfew following the pandemic, the zoo remains closed till the 1st January 2022,
                         Once the curfew is lifted, the Zoo will follow the Government's Protocols, and update the
@@ -112,42 +145,44 @@
                     </p>
                 </section>
 
-                <!--SECTION 4 - info on membership process, benefits and how-to register-->
-                <section class="MemberLists">
-                    <h1>Become A Member today!!</h1>
-                    <h2>Members now have added benefits & Privileges</h2>
-                    <ul>
-                        <li>Exclusive discounts for Zoo Mercahndise</li>
-                        <li>5 Free visits a year</li>
-                        <li>50% discount on all Animal Photo Booths</li>
-                        <li>And many more monthly offers!!!</li>
-                    </ul>
-                    <br>
-                    <!--how to register to become a member-->
-                    <h1>How to Become an official member</h1>
-                    <ol>
-                        <li>Email us at zoosl@slt.lk With the Subject ZOO MEMBERSHIP</li>
-                        <li>Our Team will send you a list of memebership levels and the fee for each</li>
-                        <li>Respond with the requested details and wait for your Member ID to arrive via Post</li>
-                    </ol>
+                <!--SECTION 5 - info on membership process, benefits and how-to register-->
+                <section class="sec5-index">
+                    <div class="sec5-grid">
+                        <h1>Become A Member today!!</h1>
+                        <h2>Members now have added benefits & Privileges</h2>
+                        <ul>
+                            <li>Exclusive discounts for Zoo Mercahndise</li>
+                            <li>5 Free visits a year</li>
+                            <li>50% discount on all Animal Photo Booths</li>
+                            <li>And many more monthly offers!!!</li>
+                        </ul>
+                    </div>
+                    <div class="sec5-grid">
+                        <h1>How to Become an official member</h1>
+                        <ol>
+                            <li>Email us at zoosl@slt.lk With the Subject ZOO MEMBERSHIP</li>
+                            <li>Our Team will send you a list of memebership levels and the fee for each</li>
+                            <li>Respond with the requested details and wait for your Member ID to arrive via Post</li>
+                        </ol>
+                    </div>
                 </section>
 
                 <footer>
                     <h1>Follow Our Socials</h1><br>
                     <a href="https://www.facebook.com/N.Z.G.D.S/" target="_blank">
-                        <img src="IMAGES/Common Images/Social Media Icons/facebook.png" width="50 px">
+                        <img src="IMAGES/common/social-media/facebook.png" width="50 px">
                     </a>
                     <a href="" target="_blank">
-                        <img src="IMAGES/Common Images/Social Media Icons/insta.png" width="50 px">
+                        <img src="IMAGES/common/social-media/insta.png" width="50 px">
                     </a>
                     <a href="https://twitter.com/dehiwalazoo?lang=en" target="_blank">
-                        <img src="IMAGES/Common Images/Social Media Icons/twitter.png" width="50 px">
+                        <img src="IMAGES/common/social-media/twitter.png" width="50 px">
                     </a>
                     <a href="https://youtu.be/OqL_En6SHNA" target="_blank">
-                        <img src="IMAGES/Common Images/Social Media Icons/youtube.png" width="50 px">
+                        <img src="IMAGES/common/social-media/youtube.png" width="50 px">
                     </a>
                     <a href=mailto:zoosl@slt.lk target="_blank">
-                        <img src="IMAGES/Common Images/Social Media Icons/mail.png" width="50 px">
+                        <img src="IMAGES/common/social-media/mail.png" width="50 px">
                         </a>
                         <br>
                     <form>
@@ -155,7 +190,7 @@
                         Email: <input type="email" width="100">
                     </form>
                     <h1>Affiliated with</h1>
-                    <img src="IMAGES/Common Images/Affiliates/wilpattu.jpg" width="150">
+                    <img src="IMAGES/common/Affiliates/wilpattu.jpg" width="150">
 
                     <!--
                         Name:Ruwaidha Hakeem
@@ -167,7 +202,7 @@
                         logo. designed by Ruwaidha Hakeeem via Canva
                         Graphics from iconsy via Canva.com
 
-                        Social Media Icons by Kalash@iconfinder
+                        social-media by Kalash@iconfinder
                         https://www.iconfinder.com/iconsets/social-media-and-logos-11
 
                         Affiliate Image
