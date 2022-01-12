@@ -326,6 +326,8 @@ section .sec3-index{
     font-size: 50px;
     font-style: italic;
 }
+
+/*ACTIVITIES*/
 .sec1-activity-content{
     padding: 10px;
     margin: 0;
@@ -378,8 +380,30 @@ section .sec3-index{
     text-align: center;
     
 }
+/*SHOP AND DONATE*/
+.products{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    margin: 0px;
+}
+.plushie {
+    width: auto;
+    height: 400px;
+    padding: 15px;
+    
+}
+.plushie img{
+    width: 300px;
+}
 
-
+/*contact us*/
+.contact-us form{
+    padding: 10px;
+}
+.contact-us div{
+    margin: 10px;
+}
 
 
 .activity-content h1,.activity-content h2,
@@ -393,6 +417,22 @@ section .sec3-index{
     border: 5px solid var(--g3);
     border-radius: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
