@@ -33,20 +33,21 @@
                             <input type="text" class="search-txt" placeholder="Search">
                             <!--<input type="button" class="search-btn"value="Search">-->
                         </div>
-                        <li><a href= "index.html" class="current">HOME</a></li>
+                        <li><a href= "index.html">HOME</a></li>
                         <li><a href= "animalsandplants.html">ANIMALS & PLANTS</a></li>
-                        <li><a href= "activities.html">ACTIVITIES</a></li>
+                        <li class="current"><a href= "activities.html" >ACTIVITIES</a></li>
                         <li><a href= "shop&donate.html">SHOP & DONATIONS</a></li>
                         <li><a href= "contactus.html">CONTACT US!</a></li>
 
                     </ul>
                 </nav>
 
-            <div>
+            <div class="activity-content">
                 <!--Live animals Activity-->
                 <header>
                     <!--Section 1-->
-                    <section>
+                    <section class="sec1-activity">
+
                         <h1>LIVE FROM THE WILD</h1>
                         <p>
                             Due to the Zoo's Increase in its budget cut, Thanks to the vote of the Public,
@@ -61,47 +62,62 @@
                             <h5>Turtle Cam</h5>
                             2PM to 3PM Fridays
                         </p>
-                        <h2>MANTA RAYS</h2>
-                        <a href="animal1.html" target="blank">
-                            <img src="IMAGES/webpage/activities/Manta/Manta1.jpg">
-                        </a>
-
-                        <h2>TURTLES</h2>
-                        <a href="animal2.html" target="blank">
-                            <img src="IMAGES/webpage/activities/Turtles/Turt2.jpg">
-                        </a>
+                        <div class="sec1-activity-content">  
+                            <div class="sec1-activity-grid">
+                                <h2>MANTA RAYS</h2>
+                                <a href="animal1.html" target="blank">
+                                    <img src="IMAGES/webpage/activities/Manta/Manta1.jpg">
+                                </a>
+                            </div>
+                            <div class="sec1-activity-grid">
+                                
+                            <h2>TURTLES</h2>
+                            <a href="animal2.html" target="blank">
+                                <img src="IMAGES/webpage/activities/Turtles/Turt2.jpg">
+                            </a>
+                            </div>
+                        </div>
+                        
                     </section>
                 </header>
 
-                <h1>News</h1> <br>
+                <h1>upcoming events</h1> <br>
                 <!--Section 2-->
-                <section>
-                <h1>Register for the 2022 annual Animalia Trivia Competition!</h1>
+                <section class="activity-trivia">
+                <h3>Register for the 2022 annual Animalia Trivia Competition!</h3>
                 <h3>Winners get a free tour and Exciting Cash Prices</h3>
-                <img src="IMAGES/webpage/activities/News Content/Peacock.jpg">
-                    <p>
-                        THE ANNUAL TRIVIA IS BACK! <br>
-                        We are super excited to host our first virtual trivia! <br>
-                        <h4> Rules:</h4>
-                        <ol>
-                            <li>All members must be 18 or above</li>
-                            <li>Each team can have 2-4 members</li>
-                            <li>Each team can only apply for 2 categories maximum</li>
-                            <li>The team name must strictly NOT contain any indecent language</li>
-                        </ol>
-                        <h4>Team Info Required:</h4>
-                        <ul>
-                            <li>Name of Team</li>
-                            <li>Members</li>
-                            <li>Category/Categories competing in</li>
-                        </ul>
-                        Send in your team's information here 
-                        <a href=mailto:zoosl@slt.lk target="_blank">via email</a>
-                    </p>
+                <div class="trivia-content">
+                    <div class="trivia-img">
+                        <img src="IMAGES/webpage/activities/News Content/Peacock.jpg">
+                    </div>
+    
+                    <div class="trivia-info">
+                        <p>
+                            THE ANNUAL TRIVIA IS BACK! <br>
+                            We are super excited to host our first virtual trivia! <br>
+                            <h4> Rules:</h4>
+                            <ol>
+                                <li>All members must be 18 or above</li>
+                                <li>Each team can have 2-4 members</li>
+                                <li>Each team can only apply for 2 categories maximum</li>
+                                <li>The team name must strictly NOT contain any indecent language</li>
+                            </ol>
+                            <h4>Team Info Required:</h4>
+                            <ul>
+                                <li>Name of Team</li>
+                                <li>Members</li>
+                                <li>Category/Categories competing in</li>
+                            </ul>
+                            Send in your team's information here 
+                            <a href=mailto:zoosl@slt.lk target="_blank">via email</a>
+                        </p>
+                    </div>
+                </div>
+                
                 </section>
 
                 <!--Section 3-->
-                <section>
+                <section class="activity-bday">
                 <h1>Celebrate Rani the Elephants 1st Birthday!</h1>
                 <h3>Limited Seats available, Reserve your seat now!!</h3>
                 <img src="IMAGES/webpage/activities/News Content/babyElephant.jpg">
@@ -114,18 +130,32 @@
                     since reservations are very limited.
                 </p>
                 <p>
-                    <h4>Celebration Details</h4>
-                    <ul>
-                        <li>Date: January 24th 2022</li>
-                        <li>Venue: Elephant Enclosure</li>
-                        <li>Time: 5PM to 6.30PM</li>
-                    </ul>
-                    <h4>Ticket Pricing</h4>
-                    <ul>
-                        <li>Ages below 5: Free Entrance</li>
-                        <li>Ages 5-16: 1500LKR</li>
-                        <li>Ages 16 above: 2000LKR</li>
-                    </ul>
+                    
+                    <table class="bday-details">
+                        <tr>
+                            <th><h4>Celebration Details</h4></th>
+                            <th><h4>Ticket Pricing</h4></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Date: January 24th 2022</li>
+                                    <li>Venue: Elephant Enclosure</li>
+                                    <li>Time: 5PM to 6.30PM</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Ages below 5: Free Entrance</li>
+                                    <li>Ages 5-16: 1500LKR</li>
+                                    <li>Ages 16 above: 2000LKR</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                    
+
                     Please Note that Meals will be provided
                 </p>
                 <a href="contactus.html">For More Information Contact us Here!</a>
