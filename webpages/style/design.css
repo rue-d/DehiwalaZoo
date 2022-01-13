@@ -328,6 +328,23 @@ section .sec3-index{
 }
 
 /*ACTIVITIES*/
+.activity-live-time{
+    margin-top: 10px;
+    font-size: 25px;
+}
+.activity-live-time h5{
+    font-style: italic;
+    font-weight: 900;
+}
+.activity-live-time h3{
+    text-decoration: underline;
+}
+.sec1-activity{
+    margin: 10px;
+}
+.sec1-activity p{
+    margin-top: 5px;
+}
 .sec1-activity-content{
     padding: 10px;
     margin: 0;
@@ -338,21 +355,27 @@ section .sec3-index{
     width: 500px;
     margin: 10px;
 }
-.trivia-content{
+.trivia-content, .bday-content{
     padding: 10px;
     margin: 0;
     display: inline-grid;
     grid-template-columns: auto auto auto;
     border: 5px solid var(--g3);
 }
-.trivia-img{
+
+.trivia-img .bday-img{
     width: 300px;
 }
-.trivia-content p{
+.trivia-content p,.bday-content p{
     margin: 0;
     margin-bottom: 10px;
     align-items: center;
     width: 700px;
+}
+.bday-content p{
+    background-color: transparent;
+    width: 550px;
+    margin: 10px;
 }
 .trivia-content ul li, .trivia-content ol li{
     list-style-position: inside;
@@ -361,8 +384,11 @@ section .sec3-index{
     padding: 5px;
     line-height: 10px;
 }
-.activity-trivia h3{
+.activity-trivia h3,.activity-bday h3{
     font-size: 30px;
+}
+.bday-info{
+    align-items: center;
 }
 .bday-details{
     align-items: center;
