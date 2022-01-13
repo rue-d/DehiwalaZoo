@@ -194,6 +194,7 @@ a{
     background:transparent;
     position: absolute;
     top: 0px;
+    align-items: center;
     text-align: center;
     font-size: 120px;
     font-weight: bolder;
@@ -472,11 +473,13 @@ section .sec3-index{
         padding: 0;
         margin: 0;
     }
+    .main-image>img{
+        width: 375px;
+    }
     .main-header{
         border-bottom: solid #4F5902;
-        
-        
     }
+    
     .main-header h1{
         font-size: 20px;
         font-weight: 1100;
@@ -608,7 +611,116 @@ section .sec3-index{
         margin: 10px;
         line-height: 20px;
     }
+    
+    .anim{
+        display: block;
+        padding: 0;
+        align-items: center;
+    }
+    .content img{
+        width: 300px;
+        
+    }
+    .content{
+        height: fit-content;
+        width: fit-content;
+    }
+    .plant-table table tr td h2{
+        font-size: 15px;
+    }
+    .plant-table table tr td h1{
+        font-size: 17px;
+    }
+    .plant-table table tr td {
+        font-size: 10px;
+    }
+    .plant-table table tr td img{
+        width: 100px;
+    }
+    .plant-table th,.plant-table td{
+        margin: auto;
+        width: auto;
+        border: 2px solid rgb(1, 46, 1);
+    }
+    .table-heading h1{
+        margin: 5px;
+        font-size: 30px;
+        border-top:none;
+        
+    }
+    
 
+
+    .activity-content h1,h2,h3{
+        font-size: 25px;
+    }
+
+    .sec1-activity-content{
+        display: initial;
+        width: fit-content;
+        height: fit-content;
+    }
+    .sec1-activity-content img{
+        width:200px
+    }
+    .sec1-activity-content h1, .sec1-activity-content h2{
+        font-size: 30px;
+        margin: 0;
+        
+    }
+    .trivia-content, .bday-content{
+        display: initial;
+        border:none;
+    }
+    .trivia-content p, .bday-content p{
+        width: fit-content;
+    }
+    .trivia-content img, .bday-content img{
+        width: 200px;
+    }
+    .trivia-info ol li{
+        line-height: 20px;
+        text-align: left;
+        list-style-position: inside;
+        margin-left: 0;
+
+        
+    }
+    .trivia-info ul li{
+        line-height: 17px;
+        list-style: circle;
+        list-style-position: inside;
+        margin-left: 0;
+    }
+    
+    .activity-bday ul li{
+        font-size:15px;
+        line-height: 17px;
+        list-style: circle;
+        list-style-position: inside;
+        margin-left: 0;
+    }
+    .products{
+        display: initial;
+    }
+    .products p{
+        font-size: 15px;
+    }
+    .plushie{
+        height: fit-content;
+    }
+    .plushie img{
+        width: 200px;
+    }
+    .donation h1{
+        font-size: 30px;
+        padding: 5px;
+        margin: 5px;
+        
+    }
+
+
+    
 }
     
 
