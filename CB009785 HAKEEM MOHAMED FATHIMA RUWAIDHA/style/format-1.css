@@ -1,0 +1,366 @@
+:root{
+    --g1: #3A7302; 
+    --g2: #95BB03; 
+    --g3: #4F5902; 
+    --g4: #888C04; 
+    --g5: #C3B85F; 
+
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color:var(--g5);
+    
+    
+}
+h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+    
+}
+body{
+    text-align: center;
+    margin: 600px;
+    
+}
+
+body::-webkit-scrollbar{
+    width: 1rem ;
+}
+body::-webkit-scrollbar-track{
+    background-color: var(--g5);
+}
+body::-webkit-scrollbar-thumb{
+    background-color:var(--g3);
+}
+p{
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: var(--g6);
+    font-size: 20px;
+}
+
+.main-header{
+    background: url(../images/header.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    /*display: flex;
+    justify-content: space-between;*/
+    margin-bottom: 0;
+    max-height: 800px;
+    border-bottom: 5px solid var(--g3);
+    
+}
+.main-header img{
+    background:transparent;
+    margin-top: 10px;
+    width: 120px;
+    
+}
+.manta1{
+    display: none;
+}
+.main-header h1{
+ color: #22221a;
+ font-size: 40px;
+ display: flex;
+ justify-content: center;
+ position: relative;
+ background: transparent;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    list-style: none;
+    border-top:10px solid var(--g3) ;
+    border-bottom: 10px solid var(--g3);
+    display: flex;
+    justify-content: center;
+    
+}
+.navbar a, .navbar i{
+    text-decoration: none;
+    background:transparent;
+    color: var(--g5);
+    
+}
+.navbar ul li{
+    background:transparent;
+    margin: 10px;
+    padding: 10px;
+    background:transparent;
+    display: inline-block;
+    position: relative;
+    background-color: var(--g3);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.navbar ul li a:hover{
+    font-weight: 1000;
+    font-size: 20px;
+    color: var(--g3);
+    background-color: var(--g5);
+    padding: 15px;
+    border: 2px solid var(--g3);
+    border-radius: 10px;
+    display: flex;
+    transition: 0.5s;
+    
+}
+.navbar ul li a{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#menu-text{
+    display: none;
+    color: #4F5902;
+    max-width: 100%;
+    text-align: center;
+}
+#menu-bar{
+    display: none; 
+}
+
+
+
+.search-box{
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--g4);
+    height: 40px;
+    border-radius: 20px;
+    float: right;
+
+}
+::placeholder{
+    color:#5e582c;
+}
+
+.search-txt{
+    width: 300px;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: var(--g3);
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    color: rgb(5, 50, 68);
+}
+.container img{
+    min-width:100px;
+    min-height: 10px;
+}
+
+.txt{  
+    background: transparent;
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    font-size: 120px;
+    font-weight: bolder;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    line-height: 200px;
+    font-style: italic;
+    width: 100%;
+}
+
+ .word {
+     background: transparent;
+    animation: color-animation 3s  infinite;
+  }
+  
+  .word-1 {
+    --b1:#282377;
+    --b2: #3D8DAE;
+    --b3: #009751;
+  }
+  
+  .word-2 {
+    --b1: #4a8edb;
+    --b2: #238b7f;
+    --b3: #264244;
+  }
+  
+  
+  @keyframes color-animation {
+    0%    {color: var(--b1)}
+    32%   {color: var(--b1)}
+    33%   {color: var(--b2)}
+    65%   {color: var(--b2)}
+    66%   {color: var(--b3)}
+    99%   {color: var(--b3)}
+    100%  {color: var(--b1)}
+  }
+
+
+
+fieldset {
+    align-items: center;
+    border: 3px solid black;
+    margin: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-device-width:700px){
+    body{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    header{
+        border-bottom: solid #4F5902;
+        
+    }
+    header h1{
+        font-size: 20px;
+        font-weight: 1100;
+    }
+    header img{
+        width: 100px;
+        background-color: #4F5902;
+        
+    }
+    .navbar{
+        display: none;
+        width: 100%;
+    }
+    #menu-text{
+        display: initial;
+        width: 100%;
+        margin-top: 5px;
+        align-items: center;
+        
+    }
+    
+    .navbar{
+        position: relative;
+        list-style: none;
+        border: none;
+        display: flex;
+        justify-content: center;
+        display: none;
+        border-radius:0;
+        
+    }
+    label h3{
+        border-bottom: 5px solid var(--g3);
+    }
+ 
+    .navbar ul li{
+        width: 90%;
+        display: flex;
+        margin: 5px;
+        margin-left:20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+    }
+    .navbar ul li a{
+        margin: 5px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .sec1-index{
+        border-top: solid var(--g3);
+    }
+    .search-box{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    /*makes sure when menu is clicked nav bar is opened*/
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+
+    }
+    
+    div .search-box{
+        width: 90%;
+        align-items: center;
+
+    }
+    .anim-info{
+        display: initial;
+        width: 100px;
+    }
+    .grid-container img{
+        width:100px;
+    }
+    .anim img, .anim iframe{
+        width: 200px;
+
+    }
+    .container img{
+        width: 300px;
+    }
+    .word{
+        display: none;
+    }
+    .txt h1{  
+        background: transparent;
+        position: absolute;
+        top: 0px;
+        text-align: center;
+        
+        font-weight: bolder;
+        
+        letter-spacing: 10px;
+        font-size: 50px;
+        line-height: 0;
+        font-style: italic;
+        width: 100%;
+    }
+    fieldset {
+        display: inline-block;
+
+        margin: 10px;
+        width: 300px
+
+    }
+    fieldset p{
+        width: 300px;
+        
+    }
+  
+
+
+}
+    
+
+    
+
