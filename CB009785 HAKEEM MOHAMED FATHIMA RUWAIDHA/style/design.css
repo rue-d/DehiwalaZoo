@@ -445,6 +445,11 @@ section .sec3-index{
     border-radius: 20px;
 }
 
+.purchaseLink a {
+    text-decoration: underline;
+    color: var(--g3);
+}
+
 
 
 

@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
-                <link rel="apple-touch-icon" sizes="180x180" href="./appimages/apple-touch-icon.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./appimages/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./appimages/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./appimages/favicon-16x16.png">
     <link rel="manifest" href="./appimages/site.webmanifest">
@@ -21,60 +22,81 @@
 </head>
 
 <body>
+
+    <header class="main-header">
+        <a href="./index.html" target="_blank">
+            <img src="./images/common/Logo/Logo.png" width="200px">
+        </a>
+        <h1 >Dehiwala Zoo & Botanical Reserve.</h1>
+    </header>
+
+    <!--Navigation Bar-->
+    <input type="checkbox" id="menu-bar">
+            <label for="menu-bar" id="menu-text"><h3>MENU</h3> </label>
+        <nav class="navbar">
+            <ul>
+                <div class="search-box">
+                    <!---->
+                    <input type="text" class="search-txt" placeholder="Search">
+                    <!--<input type="button" class="search-btn"value="Search">-->
+                </div>
+                <li><a href= "index.html" class="current">HOME</a></li>
+                <li><a href= "animalsandplants.html">ANIMALS & PLANTS</a></li>
+                <li><a href= "activities.html">ACTIVITIES</a></li>
+                <li class="current"><a href= "shop&donate.html" >SHOP & DONATIONS</a></li>
+                <li><a href= "contactus.html">CONTACT US!</a></li>
+
+            </ul>
+        </nav>
+
     <h1>Ticket Purchase</h1>
     <form id="TicketPurchaseForm">
+
+        
+    Visitor Category:
+    <select id="visitor" onchange="calculateCost();">
+        <option value="">Choose Here</option>
+        <option value="0">Adult</option>
+        <option value="1">Children</option>
+    </select>
+    <br>
+    <br>
+
       Ticket Type:
       <!--onchange makes a function take place when its selected-->
-        <select name="" id="ticket"  onchange="calculate();">
+        <select name="" id="ticket"  onchange="calculateCost();">
             <option value="">Choose Here</option>
-            <option value="1">Day</option>
-            <option value="2">Student</option>
-            <option value="3">Foreigner</option>
+            <option value="0">Day</option>
+            <option value="1">Student</option>
+            <option value="2">Foreigner</option>
         </select>
         <br>
         <br>
 
-    Visitor Category:
-        <select id="category" onchange="calculate();">
-            <option value="">Choose Here</option>
-            <option value="1">Adult</option>
-            <option value="2">Children</option>
-        </select>
-        <br>
-        <br>
-
+                
+      Duration:
+      <select id="duration" onchange="calculateCost();">
+          <option value="">Choose Here</option>
+          <option value="0">3 Hours</option> 
+          <option value="1">Half Day</option>
+          <option value="2">Full Day</option>
+          <option value="3">Two Days</option>
+      </select>
+      <br>
+      <br>
+                         
     No of Tickets:
     <!--Execute a JavaScript when a user leaves an input field:-->
-        <input type="text" size="5" id="noOfTickets" onblur="calculate()">
+        <input type="text" size="5" id="noOfTickets" onblur="calculateCost()">
         <br>
         <br>
-        
-      Duration:
-      <select id="duration">
-          <option value="">Choose Here</option>
-          <option value="1">3 Hours</option> 
-          <option value="2">Half Day</option>
-          <option value="3">Full Day</option>
-          <option value="4">Two Days</option>
-      </select>
-      <br>
-      <br>
-
-      Additional Services:
-      <select name="" id="addServices">
-          <option value="">Choose Here</option>
-          <option value="1">Annual Pass</option>
-          <option value="2">Food Token</option>
-      </select>
-      <br>
-      <br>
 
       Cost for selected item:
-      <span></span>
+      <span id="Cost">0.00</span>
       <br>
       <br>
 
-      <input type="button" value="Add to Order">
+      <input type="button" value="Add to Order" id="calculateOrder" onclick="AddOrder();">
       <br>
       <br>
     </form>
@@ -82,21 +104,21 @@
 
 
     <!--this is the table of the summary-->
-    <div style="display: none;">
+    <div style="display: none;" id="table" >
         <h1>Order Summary</h1>
         <table id="tableOrder">
             <thead>
                <tr>
-                <th>Ticket Type</th>
                 <th>Visitor Category</th>
-                <th>No of Tickets</th>
+                <th>Ticket Type</th>
                 <th>Duration</th>
-                <th>Aditional Services</th>
-                <th>Total Cost</th>
+                <th>No of Tickets</th>
+
+                <th>Total</th>
                </tr> 
             </thead>
 
-            <tbody id="tableBodyOrder"></tbody>
+            <tbody id="tableBody"></tbody>
 
             <tfoot>
                 <tr>
@@ -134,9 +156,6 @@
         Sign up for Our Newsletter!<br>
         Email: <input type="email" width="100">
     </form>
-
-
-
 
     <!--
     Name:Ruwaidha Hakeem

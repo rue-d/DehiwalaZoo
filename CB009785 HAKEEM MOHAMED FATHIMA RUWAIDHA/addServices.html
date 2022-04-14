@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Services</title>
+    <link rel="stylesheet" href="style/design.css">
+    <link rel="stylesheet" href="style/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./appimages/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./appimages/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./appimages/favicon-16x16.png">
+    <link rel="manifest" href="./appimages/site.webmanifest">
+    <link rel="mask-icon" href="./appimages/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <form  id="TicketPurchaseForm">
+        <h1>Additional Services</h1>
+
+        <select name="" id="addServices">
+            <option value="">Choose Here</option>
+            <option value="0">Annual Pass</option>
+            <option value="1">Food Token</option>
+            <option value="2">None</option>
+        </select>
+        <br>
+        <br>
+  
+        Cost for selected item:
+        <span id="spCost">0.00</span>
+        <br>
+        <br>
+    </form>
+
+        <!--this is the table of the summary-->
+        <div style="display: none;">
+            <h1>Order Summary</h1>
+            <table id="tableOrder">
+                <thead>
+                   <tr>
+                    <th>Aditional Services</th>
+                    <th>Total Cost</th>
+                   </tr> 
+                </thead>
+    
+                <tbody id="tableBodyOrder"></tbody>
+    
+                <tfoot>
+                    <tr>
+                        <th>Final Total</th>
+                        <th id="finalTotal">0.00</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <input type="button" value="Place Order" />
+        </div>
+
+    <script src="scripts/main2.js"></script> 
+</body>
+<footer>
+    <h1>Follow Our Socials</h1><br>
+    <a href="https://www.facebook.com/N.Z.G.D.S/" target="_blank">
+        <img src="./images/common/social-media/facebook.png" width="50 px">
+    </a>
+    <a href="" target="_blank">
+        <img src="./images/common/social-media/insta.png" width="50 px">
+    </a>
+    <a href="https://twitter.com/dehiwalazoo?lang=en" target="_blank">
+        <img src="./images/common/social-media/twitter.png" width="50 px">
+    </a>
+    <a href="https://youtu.be/OqL_En6SHNA" target="_blank">
+        <img src="./images/common/social-media/youtube.png" width="50 px">
+    </a>
+    <a href=mailto:zoosl@slt.lk target="_blank">
+        <img src="./images/common/social-media/mail.png" width="50 px">
+        </a>
+        <br>
+    <form>
+        Sign up for Our Newsletter!<br>
+        Email: <input type="email" width="100">
+    </form>
+
+    <!--
+    Name:Ruwaidha Hakeem
+    CB009785
+    Contact No: 0701876049
+    
+    logo. designed by Ruwaidha Hakeeem via Canva
+    Graphics from iconsy via Canva.com
+
+    social-media by Kalash@iconfinder
+    https://www.iconfinder.com/iconsets/social-media-and-logos-11
+    -->
+    
+</footer>
+</html>
